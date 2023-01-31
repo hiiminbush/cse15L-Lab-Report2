@@ -71,7 +71,9 @@ How are you
   }
 
 ```
+
 * An input that doesn't induce a failure for the program:
+
 ```
  @Test
   public void testReversed() {
@@ -79,6 +81,7 @@ How are you
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 ```
+
 * Here are the Junit run results: ![Image](Bug1.JPG)
 * The symptom of the failed test is that the array returned is not the same as expected
 * Here is how I fixed the bugs:
@@ -92,6 +95,7 @@ static int[] reversed(int[] arr) {
   return arr;
 }
 ```
+
 After:
 ```
 static int[] reversed(int[] arr) {
@@ -103,6 +107,7 @@ static int[] reversed(int[] arr) {
     return newArray;
   }
 ```
+
 * The bug in the original code is that it is setting the values in **arr** to the values in **newArray** which is filled with 0s.
 * I fixed it by looping through **arr** reversly and set the values in **newArray** to the values in **arr** reversly.
 ## What I learned from week 2&3 labs
