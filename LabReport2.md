@@ -48,11 +48,13 @@ $ java StringServer 4000
 * Trying using ```/add-message?s=Hi```: ![Image](StringServer2.JPG)
 * The page shows ```Hi``` as shown
 * Here the method handleRequest from class Handler is being called.
-* Since there is ```/add-message``` in the path, the query of the url will be split by ```=``` and stored in the string array called parameters
-* Then the code will check if the 0th index of parameters is ```s```, and since ```parameters[0]``` is indeed ```s``` the code will set the string variable **s** to be ```parameters[1]```
+* Since there is ```/add-message``` in the path, the query of the url will be split by ```=``` and stored in the string array called **parameters**
+* Then the code will check if the 0th index of **parameters** is ```s```, and since ```parameters[0]``` is indeed ```s``` the code will set the string variable **s** to be ```parameters[1]```
 * Then the code will add the string variable **s** and ```"\n"```(this will start a next line) to the variable **message** that was initialized earlier, and the code will return **message**
 * Now let's tyring adding a new message using ```/add-message?s=How are you```: ![Image](StringServer3.JPG)
-* The page shows ```
+* Now **parameters** should be set to {"s", "How are you"}, and **s** will be set to "How are you"
+* The code will add **s** to **message** which includes the previous strings, and the code then returns **message**, this will have the page show:
+```
 Hi
 How are you
 ```
