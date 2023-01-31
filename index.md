@@ -69,7 +69,6 @@ How are you
     int[] input1 = {1,2,3,4};
     assertArrayEquals(new int[]{4,3,2,1}, ArrayExamples.reversed(input1));
   }
-
 ```
 
 * An input that doesn't induce a failure for the program:
