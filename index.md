@@ -84,7 +84,7 @@ How are you
 * Here are the Junit run results: ![Image](Bug1.JPG)
 * The symptom of the failed test is that the array returned is not the same as expected
 * Here is how I fixed the bugs:
-Before:
+* Before:
 ```
 static int[] reversed(int[] arr) {
   int[] newArray = new int[arr.length];
@@ -95,7 +95,7 @@ static int[] reversed(int[] arr) {
 }
 ```
 
-After:
+* After:
 ```
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
