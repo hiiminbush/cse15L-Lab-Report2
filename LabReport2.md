@@ -58,3 +58,5 @@ $ java StringServer 4000
 Hi
 How are you
 ```
+## Bugs and JUnit testing 
+* The method 
