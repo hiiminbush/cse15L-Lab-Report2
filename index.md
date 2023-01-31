@@ -1,4 +1,3 @@
-# Lab Report 2
 ## StringServer
 * Below is my code for StringServer:
 ```
