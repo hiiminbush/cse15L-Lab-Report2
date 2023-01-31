@@ -45,7 +45,8 @@ $ java StringServer 4000
 * Then runs the if statement looking for ```/add-message``` in the path
 * Since there is no ```/add-message``` in the path of the url, the code will return ```Nothing yet```, and the webpage will show ```Nothing yet```
 * Now let's trying using ```/add-message```
-* Trying using ```/add-message?s=Hi```: ![Image](StringServer2.JPG)
+* Trying using ```/add-message?s=Hi```: 
+![Image](StringServer2.JPG)
 * The page shows ```Hi``` as shown
 * Here the method handleRequest from class Handler is being called.
 * Since there is ```/add-message``` in the path, the query of the url will be split by ```=``` and stored in the string array called **parameters**
